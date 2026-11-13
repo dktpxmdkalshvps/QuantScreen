@@ -1,0 +1,5 @@
+regime,cells,min_origins_per_cell,max_origins_per_cell,technical_wins_vs_naive_cells,technical_wins_vs_drift_cells,median_technical_improvement_pct
+2019,16,6,7,9,9,10.00976454101341
+2020-2021,16,12,13,8,7,-2.7475725768054735
+2022,16,6,7,6,6,-12.428121859069662
+2023-2025,16,18,19,12,8,2.5665062158210294
