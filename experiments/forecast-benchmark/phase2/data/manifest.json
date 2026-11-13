@@ -1,0 +1,136 @@
+{
+  "start": "2018-01-01",
+  "end": "2025-12-31",
+  "source": {
+    "url": "https://github.com/Johnbrick123/sp500-data/releases/download/data/prices.parquet",
+    "downloaded_on": "2026-11-12",
+    "path": "raw/public_prices.parquet",
+    "sha256": "fb846e89dc6cd128411f145bd4f79900c20334a6dd504f33d776cd87d46f560b",
+    "convention": "Yahoo-derived split-adjusted OHLC, reported volume; adj_close includes dividend adjustment and is not used"
+  },
+  "assets": {
+    "SPY": {
+      "path": "extracted/SPY_2018_2025.csv",
+      "sha256": "17d63e3ef29570acbfd76419976c87523db9bba0c6f8d3bca058295f291a7baf",
+      "source_url": "https://github.com/Johnbrick123/sp500-data/releases/download/data/prices.parquet",
+      "downloaded_on": "2026-11-12",
+      "convention": "Yahoo-derived split-adjusted OHLC, reported volume; adj_close includes dividend adjustment and is not used",
+      "audit": {
+        "rows": 2011,
+        "first": "2018-01-02",
+        "last": "2025-12-31",
+        "expected_sessions": 2011,
+        "missing_sessions": [],
+        "unexpected_sessions": [],
+        "close_jumps_over_40pct": [],
+        "adjustment_ratio_jumps_over_5pct": [],
+        "split_events": []
+      }
+    },
+    "QQQ": {
+      "path": "extracted/QQQ_2018_2025.csv",
+      "sha256": "99376b3da68a011f6e566f8c54109fdf02bc45a4bad05496e6e4a03823512186",
+      "source_url": "https://github.com/Johnbrick123/sp500-data/releases/download/data/prices.parquet",
+      "downloaded_on": "2026-11-12",
+      "convention": "Yahoo-derived split-adjusted OHLC, reported volume; adj_close includes dividend adjustment and is not used",
+      "audit": {
+        "rows": 2011,
+        "first": "2018-01-02",
+        "last": "2025-12-31",
+        "expected_sessions": 2011,
+        "missing_sessions": [],
+        "unexpected_sessions": [],
+        "close_jumps_over_40pct": [],
+        "adjustment_ratio_jumps_over_5pct": [],
+        "split_events": []
+      }
+    },
+    "IWM": {
+      "path": "extracted/IWM_2018_2025.csv",
+      "sha256": "48bf6fdaf4c28d41e42eb78281fef8ff58a84cb6bd9c26efd836e02b77b67169",
+      "source_url": "https://github.com/Johnbrick123/sp500-data/releases/download/data/prices.parquet",
+      "downloaded_on": "2026-11-12",
+      "convention": "Yahoo-derived split-adjusted OHLC, reported volume; adj_close includes dividend adjustment and is not used",
+      "audit": {
+        "rows": 2011,
+        "first": "2018-01-02",
+        "last": "2025-12-31",
+        "expected_sessions": 2011,
+        "missing_sessions": [],
+        "unexpected_sessions": [],
+        "close_jumps_over_40pct": [],
+        "adjustment_ratio_jumps_over_5pct": [],
+        "split_events": []
+      }
+    },
+    "AAPL": {
+      "path": "extracted/AAPL_2018_2025.csv",
+      "sha256": "0b1428d84b507eda6e05e9bece4e89179dd1c0b83e106d3c97452d09f75bd819",
+      "source_url": "https://github.com/Johnbrick123/sp500-data/releases/download/data/prices.parquet",
+      "downloaded_on": "2026-11-12",
+      "convention": "Yahoo-derived split-adjusted OHLC, reported volume; adj_close includes dividend adjustment and is not used",
+      "audit": {
+        "rows": 2011,
+        "first": "2018-01-02",
+        "last": "2025-12-31",
+        "expected_sessions": 2011,
+        "missing_sessions": [],
+        "unexpected_sessions": [],
+        "close_jumps_over_40pct": [],
+        "adjustment_ratio_jumps_over_5pct": [],
+        "split_events": [
+          {
+            "date": "2020-08-31",
+            "factor": 4.0
+          }
+        ]
+      }
+    }
+  },
+  "cross_checks": {
+    "SPY": {
+      "url": "https://github.com/lambdaclass/options_portfolio_backtester/releases/download/data-v1/SPY_underlying.parquet",
+      "path": "raw/SPY_underlying.parquet",
+      "downloaded_on": "2026-11-12",
+      "sha256": "847e60a441eb10969d87cd4a6da604257b782d9076168f68d5730b84096c79db",
+      "overlap_rows": 1999,
+      "first_overlap": "2018-01-02",
+      "last_overlap": "2025-12-12",
+      "max_close_difference_pct": 5.678043313306347e-06,
+      "note": "ETF release stops in mid-December 2025; reference is a consistency check only"
+    },
+    "QQQ": {
+      "url": "https://github.com/lambdaclass/options_portfolio_backtester/releases/download/data-v1/QQQ_underlying.parquet",
+      "path": "raw/QQQ_underlying.parquet",
+      "downloaded_on": "2026-11-12",
+      "sha256": "78c015fd7fa9d493cd798d5ae81b3c2ae6dc3b8176e25e7bb90cd4114b103351",
+      "overlap_rows": 2000,
+      "first_overlap": "2018-01-02",
+      "last_overlap": "2025-12-15",
+      "max_close_difference_pct": 5.708273254079188e-06,
+      "note": "ETF release stops in mid-December 2025; reference is a consistency check only"
+    },
+    "IWM": {
+      "url": "https://github.com/lambdaclass/options_portfolio_backtester/releases/download/data-v1/IWM_underlying.parquet",
+      "path": "raw/IWM_underlying.parquet",
+      "downloaded_on": "2026-11-12",
+      "sha256": "e980f50473a8c346ba9ac8b05dcf3da691581dae742f649cb3608d0efe2ef940",
+      "overlap_rows": 2000,
+      "first_overlap": "2018-01-02",
+      "last_overlap": "2025-12-15",
+      "max_close_difference_pct": 5.5514287833347e-06,
+      "note": "ETF release stops in mid-December 2025; reference is a consistency check only"
+    },
+    "AAPL": {
+      "url": "https://pubmarks.github.io/datasets/stocks/AAPL/ohlcv.csv",
+      "path": "raw/AAPL_pubmarks_ohlcv.csv",
+      "downloaded_on": "2026-11-12",
+      "sha256": "f7782bd98b9ef5088352d125106049b5ecc00c7194681414ebac4f6798b4fa4e",
+      "overlap_rows": 2011,
+      "first_overlap": "2018-01-02",
+      "last_overlap": "2025-12-31",
+      "max_close_difference_pct": 0.0014048317767523244,
+      "note": "ETF release stops in mid-December 2025; reference is a consistency check only"
+    }
+  }
+}
